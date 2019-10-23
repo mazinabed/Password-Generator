@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+   
+    <nav class="navbar navbar-light ">
+        <a class="navbar-brand" href="#">Password Generator</a>
+    </nav>
+    <div class="container">
+           
+
+        <div class="row">
+            <div class="col-lg-10 col-sm-12">
+                <div class="content">
+                        
+                    <h4>Generate a Password</h4>
+                    <hr size="5">
+                    
+                    <input type="text" id="display">
+                   
+        
+                    <input type="range" value min="8" max="128" name="slider" id="text">
+                    <div id="lenght"></div>
+                    <hr size="5">
+                    
+                
+                  <input type="checkbox" id="lowercase">
+                  <label class="check-label" for="lowercase"><span class="checkbox">Use Lowercase Characters</span></label>
+               
+                  <input type="checkbox" id="uppercase">
+                  <label class="check-label" for="uppercase"><span class="checkbox">Use Uppercase Characters</span></label>
+               
+                  <input type="checkbox" id="numbers">
+                  <label class="check-label" for="numbers"><span class="checkbox">Use Numbers</span></label>
+                
+                  <input type="checkbox" id="punctuation">
+                  <label class="check-label" for="punctuation"><span class="checkbox">Use special characters</span></label>
+             
+                    <button onclick="generate()" class="btn btn-default btn-lg">Generate</button>
+                    <button onclick="copyPassword()" class="btn btn-primary btn-lg">Copy to ClipBoard</button>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+   
+</body>
+
+</html>
